@@ -3,7 +3,7 @@ class HoneytrapAgent < Formula
 
   desc "Honeytrap Agent"
   homepage "https://github.com/honeytrap/honeytrap-agent"
-  url "https://github.com/honeytrap/honeytrap-agent.git", :revision => "6e86ea90370fce43afab20ddf5a264dea92b1404"
+  url "https://github.com/honeytrap/honeytrap-agent.git", :revision => "f2a7ba72b30ba4c8b22f63663958e6eb0dca183b"
 
   #version git_tag.gsub(%r'[^\d]+', '') + 'Z'
   #revision 1
