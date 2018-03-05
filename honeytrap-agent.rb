@@ -3,7 +3,7 @@ class HoneytrapAgent < Formula
 
   desc "Honeytrap Agent"
   homepage "https://github.com/honeytrap/honeytrap-agent"
-  url "https://github.com/honeytrap/honeytrap-agent.git", :revision => "f2a7ba72b30ba4c8b22f63663958e6eb0dca183b"
+  url "https://github.com/honeytrap/honeytrap-agent.git", :revision => "ff913cf3951bd03fc34abb2a25a1d722fa1ecd87"
 
   #version git_tag.gsub(%r'[^\d]+', '') + 'Z'
   #revision 1
@@ -17,7 +17,7 @@ class HoneytrapAgent < Formula
     clipath = buildpath/"src/github.com/honeytrap/honeytrap-agent"
     clipath.install Dir["*"]
 
-    ldflags = "-X github.com/honeytrap/honeytrap-agent/server.Version=2018-02-26T21:03:09Z -X github.com/honeytrap/honeytrap-agent/server.ReleaseTag=DEVELOPMENT.2018-02-26T21-03-09Z -X github.com/honeytrap/honeytrap-agent/server.CommitID=f2a7ba72b30ba4c8b22f63663958e6eb0dca183b -X github.com/honeytrap/honeytrap-agent/server.ShortCommitID=f2a7ba72b30b"
+    ldflags = "-X github.com/honeytrap/honeytrap-agent/server.Version=2018-03-05T14:52:44Z -X github.com/honeytrap/honeytrap-agent/server.ReleaseTag=DEVELOPMENT.2018-03-05T14-52-44Z -X github.com/honeytrap/honeytrap-agent/server.CommitID=ff913cf3951bd03fc34abb2a25a1d722fa1ecd87 -X github.com/honeytrap/honeytrap-agent/server.ShortCommitID=ff913cf3951b"
 
     cd clipath do
       system "go", "build", "-ldflags", ldflags, "-o", buildpath/"honeytrap-agent"
